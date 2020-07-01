@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Bán gì tự hiểu</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+    .dropbtn {
+      margin-left: 30px;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .a {
+  position: relative;
+  width: 50%;
+}
+    .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #f1f1f1;
+}
+
+.a:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 4px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 1px solid #f44336;
+}
+
+.button3:hover {
+  background-color: #f44336;
+  color: white;
+}
+#dungyen{
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  right: 0;
+  width: 100px;
+}
+.parallax {
+  background-image: url("background-website-01.jpg");
+
+  min-height: 500px; 
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.background{
+  border: 1px outset black; 
+  margin-left: 760px; 
+  background-color: rgb(250, 241, 227); 
+  opacity: 80%;
+}
+.todam{
+  font-weight: bold;
+}
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid" style="background-color: coral;">
+    <div style="background-color: wheat; width: 94%;margin: 0 auto;">
+      <div style="padding: 4px; margin: 5px">
+        <select name="" id="" style="height: 35px; width: 100px;">
+          <option value="">Hà Nội</option>
+          <option value="">Hồ Chí Minh</option>
+          <option value="">An Giang</option>
+          <option value="">Đà Nẵng</option>
+          <option value="">Huế</option>
+        </select>
+        <input name="" id="lay" type="text" value="" placeholder="Bạn cần tìm" style="height: 35px; width: 300px;"><button
+          type="submit"><i class="fa fa-search" onclick="google()"
+            style="height: 25px; width: 50px; padding : 5px; margin: 3px"></i></button>
+
+        <a target="_blank" href="https://didongthongminh.vn/" title="Smartphone"><img src="smartphone.png" alt="smartphone"
+            style="width: 30px; height: 30px; margin-left: 65px;"></a>
+        <a target="_blank" href="https://didongthongminh.vn/" title="Tablet"><img src="smartphone.png" alt="tablet"
+            style="width: 45px; height: 30px; margin-left: 60px;"></a>
+        <a target="_blank" href="https://didongthongminh.vn/" title="SmartWatch"><img src="watch-512.png" alt="watch"
+            style="width: 30px; height: 30px; margin-left: 60px;"></a>
+        <a target="_blank" href="https://didongthongminh.vn/" title="accessories"><img src="phukien.png" alt="watch"
+            style="width: 30px; height: 30px; margin-left: 65px;"></a>
+        <a target="_blank" href="https://didongthongminh.vn/" title="Sim Tag"><img src="sim.png" alt="watch"
+            style="width: 30px; height: 30px; margin-left: 70px;"></a>
+        <a target="_blank" href="https://didongthongminh.vn/" title="gift"><img src="gift.png" alt="watch"
+            style="width: 50px; height: 50px; margin: -5px 50px; position: absolute;"></a>
+        <a target="_blank" href="https://didongthongminh.vn/tai-khoan" title="account"><img src="acount.png" alt="watch"
+            style="width: 30px; height: 30px; margin-left: 160px;"></a>
+
+      </div>
+
+    </div>
+  </div>
+  <div class="parallax">
+  <div style="width: 92%; margin: auto;">
+    <div style="position: absolute; padding-left: -100px;">
+    <a href=""><img class="mySlides" src="slide-iPhone-XS-max-VNA.png" alt="" ></a>
+    <a href=""><img class="mySlides" src="iPhone-se-1.jpg" alt="" ></a>
+    <button class="w3-button w3-black w3-display-left"
+      onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right"
+      onclick="plusDivs(1)">&#10095;</button>
+    </div>
+    <div class="background">
+      <pre class="todam">TIN CÔNG NGHỆ                               <span><a href="https://didongthongminh.vn/ban-tin-cong-nghe">Xem tất cả...</a></span></pre>
+      <table class="todam">
+        <tr>
+          <td><img src="tin1.jpg" alt="" style="width: 120px; height: 85px"></td>
+          <td><span><a title="Nhiều lắm không gõ được đâu"
+                href="https://didongthongminh.vn/ban-tin-cong-nghe/cam-nhan-ipad-10-2-2019-sau-nua-nam-su-dung">Cảm nhận
+                iPad 10.2 2019 sau nửa năm sử dụng</a></span>
+            <p style="color:rgb(170, 165, 158)">Thứ tư, 24/06/2020</p>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="tin2.png" alt="" style="width: 120px; height: 85px">
+          </td>
+          <td><span><a title="Nhiều lắm không gõ được đâu" href="https://didongthongminh.vn/ban-tin-cong-nghe/ios-14-va-nhung-dieu-ban-can-biet"> 14 và
+                những điều bạn cần biết</a></span>
+            <p style="color:rgb(170, 165, 158)">Thứ ba, 23/06/2020</p>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="tin3.jpg" alt="" style="width: 120px; height: 85px">
+          </td>
+          <td><span><a title="Nhiều lắm không gõ được đâu"
+                href="https://www.google.com/search?rlz=1C1CHBF_enVN891VN891&sxsrf=ALeKk01QB05c-LTDMP6dTigBjxQluBR3tQ%3A1593178266999&ei=mvj1Xti7PM-C-Qb8xI6oAw&q=oppo+reno4&oq=oppo+reno4&gs_lcp=CgZwc3ktYWIQAzIECAAQCjIECAAQCjIECAAQCjIICAAQFhAKEB4yCAgAEBYQChAeMggIABAWEAoQHjIICAAQFhAKEB4yCAgAEBYQChAeMggIABAWEAoQHjIICAAQFhAKEB46BAgjECc6BQgAELEDOgIIADoECAAQQzoHCAAQsQMQQ1CjWFj_fGDqgAFoAHAAeACAAX6IAbwIkgEDMi44mAEAoAEBqgEHZ3dzLXdpeg&sclient=psy-ab&ved=0ahUKEwjY8KvFy5_qAhVPQd4KHXyiAzUQ4dUDCAw&uact=5">OPPO
+                Reno4 Pro 5G ra mắt: Sạc đầy 100% trong 36',...</a></span>
+            <p style="color:rgb(170, 165, 158)">Thứ sáu, 05/06/2020</p>
+          </td>
+        </tr>
+      </table>
+
+    </div>
+  </div>
+  <div class="container" style="padding-top: 20px;">
+    <input class="button button3" type="button" value="Tất cả" onclick="kich()">
+    <input class='button button3'type="button" value="Bán chạy" onclick="kich()">
+    <input class='button button3'type="button" value="Siêu phẩm" onclick="kich()">
+    <input class='button button3'type="button" value="Siêu rẻ" onclick="kich()">
+    <input class='button button3'type="button" value="Siêu pin" onclick="kich()">
+    <input class='button button3'type="button" value="Siêu bền" onclick="kich()">
+    <input class='button button3'type="button" value="Mới" onclick="kich()">
+    <input class='button button3'type="button" value="Cũ" onclick="kich()">
+    <input class='button button3'type="button" value="Chính Hãng" onclick="kich()">
+  </div>
+
+    <div class="container" style="margin-top: 10px; padding: 5px; background-color: rgb(206, 204, 204);">
+      <span style="padding-left: 10px;"><a href="https://didongthongminh.vn/iphone">Apple iPhone</a></span>
+      <span style="padding-left: 10px;"><a href="https://didongthongminh.vn/samsung">Samsung</a></span>
+      <span style="padding-left: 10px;"><a href="https://didongthongminh.vn/xiaomi">Xiaomi</a></span>
+      <span style="padding-left: 10px;"><a
+          href="https://didongthongminh.vn/dien-thoai-san-pham-ban-chay?orderby&min_price=0&max_price=1000000&pa_bo-nho-trong">Dưới
+          1 triệu</a></span>
+      <span style="padding-left: 10px;"><a
+          href="https://didongthongminh.vn/dien-thoai-san-pham-ban-chay?orderby&min_price=3000001&max_price=7000000&pa_bo-nho-trong">Từ
+          3 đến 7 triệu</a></span>
+      <span style="padding-left: 10px;"><a
+          href="https://didongthongminh.vn/dien-thoai-san-pham-ban-chay?orderby&min_price=15000000&max_price=50000000&pa_bo-nho-trong">Hơn
+          15 triệu</a></span>
+      <div class="dropdown">
+        <span class="dropbtn">Giá khác</span>
+        <div class="dropdown-content">
+          <a href="#">Dưới 3 triệu</a>
+          <a href="#">Từ 5 đến 7 triệu</a>
+          <a href="#">Từ 7 đến 15 triệu</a>
+          <a href="#">Từ 5 đến 10 triệu</a>
+          <a href="#">Bla Bla</a>
+        </div>
+      </div>
+    </div>
+    <div class="container" style="padding-top: 15px;">
+      <h4>Điện thoại</h4>
+    </div>
+    <div class="container">
+      <table>
+        <tr>
+          <td  class="a" style="text-align: center;"><img style="width: 200px; margin-left: auto" src="iphone-se-2020-black.png"
+                ></a>
+              iPhone SE 64Gb 2020 Chính Hãng V/N/A
+              <a href="http://google.com/"><div class="overlay" >
+                <div title="Nhiều lắm không gõ được đâu" class="text"><pre style="text-align: left; font-size: medium;">iPhone SE 64GB 2020 Chính
+Hãng V/N/A
+
+Màn hình IPS LCD 4,7"
+CPU Apple A13 Bionic
+Ram 3G, Rom 64 G
+Camera 12MP, Selfie: 7MP
+Fast charging 18W
+                </pre></div>
+              </div></a></td>
+                
+              <td class ='a' style="text-align: center;"><img style="width: 200px; margin-left: auto" src="Redmi-9-tim.png" alt="">
+              Xiaomi redmi 9 3GB/32GB Chính Hãng
+              <a href="http://google.com/"><div class="overlay" >
+                <div title="Nhiều lắm không gõ được đâu" class="text"><pre style="text-align: left; font-size: medium;">Xiaomi redmi 9 3GB/32GB 
+Hãng
+
+Màn hình 1080 x 2340
+CPU Helio G80
+Ram, Rom
+Camera 16MP, 7MP
+Fast charging 20W
+                </pre></div>
+              </div></a></td>
+            <td class ='a' style="text-align: center;"><img style="width: 200px; margin-left: auto" src="galaxys10.png" alt="">
+              Samsung Galaxy S10 Plus Chính Hãng Like New
+              <a href="http://google.com/"><div class="overlay" >
+                <div title="Nhiều lắm không gõ được đâu" class="text"><pre style="text-align: left; font-size: medium;">Samsung Galaxy S10 
+Like New
+
+Màn hình 1080 x 2340
+CPU Helio G80
+Ram, Rom
+Camera 16MP, 7MP
+Fast charging 20W
+                </pre></div>
+              </div></a></td>
+            <td class ='a' style="text-align: center;"><img style="width: 200px; margin-left: auto" src="galaxy-a71.png" alt="">
+              Samsung Galaxy A71 128GB Chính Hãng Like New
+              <a href="http://google.com/"><div class="overlay" >
+                <div title="Nhiều lắm không gõ được đâu" class="text"><pre style="text-align: left; font-size: medium;">Samsung Galaxy S10 
+Like New
+
+Màn hình 1080 x 2340
+CPU Helio G80
+Ram, Rom
+Camera 16MP, 7MP
+Fast charging 20W
+                </pre></div>
+              </div></a></td>
+            <td class ='a' style="text-align: center;"><img style="width: 200px; margin-left: 6px" src="iphonepromax.png" alt="">
+              iPhone 11 Pro Max like new 64GB Nguyên Bản
+              <a href="http://google.com/"><div class="overlay" >
+                <div title="Nhiều lắm không gõ được đâu" class="text"><pre style="text-align: left; font-size: medium;">Samsung Galaxy S10 
+Like New
+
+Màn hình 1080 x 2340
+CPU Helio G80
+Ram, Rom
+Camera 16MP, 7MP
+Fast charging 20W
+                </pre></div>
+              </div></a></td>
+        </tr>
+        <tr style="text-align: center; height: 50px; font-size: large; color: coral; font-weight: 600;">
+          <td>10,990,000 VND</td>
+          <td>2,990,000 VND</td>
+          <td>10,990,000 VND</td>
+          <td>10,990,000 VND</td>
+          <td>10,990,000 VND</td>
+        </tr>
+        <tr>
+          <td class='a' title="Nhiều lắm không gõ được đâu" style="text-align: center;"><a href=""><img style="width: 200px; margin-left: auto" src="Samsung-Note10.png"
+             alt="">iPhone SE 64Gb 2020 Chính Hãng V/N/A
+             <a href="http://google.com/"><div class="overlay" >
+              <div title="Nhiều lắm không gõ được đâu" class="text"><pre style="text-align: left; font-size: medium;">iPhone SE 64GB 2020 Chính
+Hãng V/N/A
+
+Màn hình IPS LCD 4,7"
+CPU Apple A13 Bionic
+Ram 3G, Rom 64 G
+Camera 12MP, Selfie: 7MP
+Fast charging 18W
+              </pre></div>
+            </div></a></td>
+            <td class='a' title="Nhiều lắm không gõ được đâu" style="text-align: center;"><a href=""><img style="width: 200px; margin-left: auto; padding-top: 15px;"
+              src="xiaomi-redmi-note-9promax.png" alt="">
+            <br></br>Xiaomi redmi 9 3GB/32GB Chính Hãng
+            <a href="http://google.com/"><div class="overlay" >
+              <div title="Nhiều lắm không gõ được đâu" class="text"><pre style="text-align: left; font-size: medium;">iPhone SE 64GB 2020 Chính
+Hãng V/N/A
+
+Màn hình IPS LCD 4,7"
+CPU Apple A13 Bionic
+Ram 3G, Rom 64 G
+Camera 12MP, Selfie: 7MP
+Fast charging 18W
+              </pre></div>
+            </div></a></a></td>
+          <td class ='a'title="Nhiều lắm không gõ được đâu" style="text-align: center;"><img style="width: 200px; margin-left: auto" src="Oppo-A92Shining.png" alt="">
+            Samsung Galaxy S10 Plus Chính Hãng Like New
+            <a href="http://google.com/"><div class="overlay" >
+              <div title="Nhiều lắm không gõ được đâu" class="text"><pre style="text-align: left; font-size: medium;">iPhone SE 64GB 2020 Chính
+Hãng V/N/A
+
+Màn hình IPS LCD 4,7"
+CPU Apple A13 Bionic
+Ram 3G, Rom 64 G
+Camera 12MP, Selfie: 7MP
+Fast charging 18W
+              </pre></div>
+            </div></a></td>
+          <td class='a' title="Nhiều lắm không gõ được đâu" style="text-align: center;"><img style="width: 230px; margin-left: auto; padding-top: 15px;"
+              src="xiaomi-redminote9.jpg" alt="">
+            <br></br>Samsung Galaxy A71 128GB Chính Hãng Like New
+            <a href="http://google.com/"><div class="overlay" >
+              <div title="Nhiều lắm không gõ được đâu" class="text"><pre style="text-align: left; font-size: medium;">iPhone SE 64GB 2020 Chính
+Hãng V/N/A
+
+Màn hình IPS LCD 4,7"
+CPU Apple A13 Bionic
+Ram 3G, Rom 64 G
+Camera 12MP, Selfie: 7MP
+Fast charging 18W
+              </pre></div>
+            </div></a></td>
+          <td class='a' title="Nhiều lắm không gõ được đâu" style="text-align: center;"><img style="width: 200px; margin-left: 6px" src="Redmi-K30tim.png" alt="">
+            iPhone 11 Pro Max like new 64GB Nguyên Bản
+            <a href="http://google.com/"><div class="overlay" >
+              <div title="Nhiều lắm không gõ được đâu" class="text"><pre style="text-align: left; font-size: medium;">iPhone SE 64GB 2020 Chính
+Hãng V/N/A
+
+Màn hình IPS LCD 4,7"
+CPU Apple A13 Bionic
+Ram 3G, Rom 64 G
+Camera 12MP, Selfie: 7MP
+Fast charging 18W
+              </pre></div>
+            </div></a></td>
+        </tr>
+        <tr style="text-align: center; height: 50px; font-size: large; color: coral; font-weight: 600;">
+          <td>21,990,000 VND</td>
+          <td>5,790,000 VND</td>
+          <td>6,390,000 VND</td>
+          <td>4,750,000 VND</td>
+          <td>4,990,000 VND</td>
+        </tr>
+      </table>
+      <img id="more" src="more.PNG" style="width: 100%; height: 100%; display: none;" alt="">
+      <button id="them" class="button button3" style="margin-left: 480px;" onclick="xemthem()">Xem thêm</button><br>
+      <table>
+        <tr>
+          <td><img src="email_f.png" alt=""></td>
+          <td style="padding-top: 20px; padding-left: 25px;"><span style=" font-size: 22px;">Đăng ký nhận bản tin Di Động Thông Minh</span>
+            <p style="padding-top: 2px;">Đừng bỏ lỡ hàng ngàn sản phẩm và chương trình siêu hấp dẫn!</p>
+          </td>
+          <td><input id="dangki" style="border: 1px outset orange; width: 350px;" type="text" placeholder="Nhập địa chỉ email của bạn"></td>
+          <td><button class="button button3" onclick="dangki()">Đăng kí</button></td>
+        </tr>
+      </table>
+    </div></div>
+    <div style="background-color: rgb(247, 245, 245);" class="container-fluid">
+      <div class="container">
+        <a href=""><img style="height: 50px; width: 150px; padding-left: 0px;" src="hoidap.PNG" alt=""></a>
+      
+        <a href=""><img style="height: 52px; width: 280px; padding-left: 100px;" src="doitrahang.PNG" alt=""></a>
+   
+        <a href=""><img style="height: 52px; width: 280px; padding-left: 100px;" src="mienphi.PNG" alt=""></a>
+
+        <a href=""><img style="height: 52px; width: 300px; padding-left: 100px;" src="hoptac.PNG" alt=""></a>
+      </div>
+    </div>
+    <div class="container">
+      <table>
+        <td><span>Giới thiệu công ty (DĐTM)</span><br>
+          <span>Hệ thống cửa hàng</span><br>
+          <span>Tuyển dụng</span>
+          <p>Chính sách bảo mật</p>
+        </td>
+        <td style="padding-left: 60px;"><span>Chính sách bảo hành</span><br>
+          <span>Chính sách đổi trả sản phẩm</span><br>
+          <span>Hỏi Đáp Mua Hàng Online</span>
+          <p>Phương Thức Thanh Toán</p>
+        </td>
+        <td style="padding-left: 67px;"><span>Gọi mua hàng miễn phí: 0855.100.001</span><br>
+          <span>Gọi bảo hành & khiếu nại: 1800.6502</span><br>
+          <p>Gọi hợp tác kinh doanh: 1900.6122</p>
+        </td>
+        <td></td>
+      </table>
+      <footer style="text-align: center; font-size: small;">
+        <span>© 2017 - Công ty Cổ Phần viễn thông Di Động Thông Minh - 119 phố Thái Thịnh, phường Thịnh Quang, quận Đống
+          Đa, thành phố Hà Nội, Việt Nam<br>
+        </span>
+        <span>MST:0105815899 (Số giấy chứng nhận đăng ký kinh doanh thương nhân) - Ngày cấp lần đầu:
+          12/03/2012</span><br>
+        <p>Đăng ký thay đổi lần 2: 04/11/2013 - Nơi cấp: Sở kế hoạch và đầu tư thành phố Hà Nội</p>
+      </footer>
+      <div id="dungyen"><div  id="tat" onclick="tatde()" style="height: 20px; width: 20px; margin-left: 160px; position: absolute;">
+        <button style="text-align: center; border: none;">X</button></div><a href="https://google.com"><img title="kich vao lam gi ha may" id="tatanh" src="meomeo.jpg" style=" height: 200px; width: 180px;" alt=""></a></div>
+      
+    </div>
+    <script>
+      function kich() {
+        window.open("https://didongthongminh.vn/", "_blank");
+      }
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = x.length }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+      }
+      function google(){
+        let e=document.getElementById("lay").value;
+        window.open("https://www.google.com/?q="+e);
+        document.getElementById("lay").value ="";
+      }
+      
+      function xemthem(){
+        let e = document.getElementById('more').style.display;
+        if(e=="none"){
+         document.getElementById("more").style.display = "initial";
+         document.getElementById("them").innerHTML="Thu Gọn"
+        }else{
+        document.getElementById("more").style.display= "none";
+        document.getElementById("them").innerHTML="Xem Thêm"
+        }
+      }
+      function dangki(){
+        document.getElementById("dangki").value ="";
+      }
+      function tatde(){
+        document.getElementById('tatanh').style.display= "none";
+        document.getElementById('tat').style.display= "none";
+
+      }
+    </script>
+</body>
+
+</html>
